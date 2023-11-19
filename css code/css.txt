@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.continer{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* start photo */
+.photo{
+    background-image: url(photo/WhatsApp\ Image\ 2023-09-07\ at\ 03.27.25.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.photo .continer{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    line-height: 2;
+}
+.photo .continer h1:first-child{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.photo .continer h1{
+    font-weight: bold;
+    color: gold;
+    text-transform: uppercase;
+}
+.photo .continer p{
+    color: white;
+    font-weight: bold;
+    width: 60%;
+}
+.photo .continer a{
+    text-decoration: none;
+    font-weight: bold; 
+    display: inline-block;
+    border-radius: 10px;
+}
+.photo .continer a.frist{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20%;
+    text-align: center;
+    transition: 0.2s;
+
+}
+.photo .continer a.frist:hover{
+    background-color: red;
+}
+.photo .continer a.second{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20%;
+    text-align: center;
+    transition: 0.2s;
+
+}
+.photo .continer a.second:hover{
+    background-color: gold;
+}
+.photo .continer ul{
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 120px;
+}
+.photo .continer ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    margin-left: 10px;
+}
+.photo .continer ul li.active{
+    background-color: white;
+}
+@media (max-width:767px) {
+    .photo{
+        padding: 40px;
+        padding-bottom: 40px;
+    }
+    .photo .continer{
+        width: 70%;
+        left: 50%;
+    }
+    .photo .continer h1{
+        font-weight: bold;
+        color: gold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .photo .continer p{
+        color: white;
+        font-weight: bold;
+        width: 90%;
+    }
+    .photo .continer ul{
+        list-style-type: none;
+        margin-top: 20px;
+        display: flex;
+        margin-left: 60px;
+    }
+    .photo .continer a.frist,.photo .continer a.second{
+        display: block;
+        width: 50%;
+    }
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    .photo .continer a.frist,.photo .continer a.second{
+        width: 50%;
+    }
+    
+}
+/* end photo */
+/* start about */
+.about{
+    margin-top: 20px;
+}
+.about .continer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .continer .text{
+    margin-left: 20px;
+    line-height: 2;
+}
+.about .continer .text h2{
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 3px;
+}
+.about .continer .text h2::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: gold;
+    border-radius: 30px;
+    bottom: 0;
+    left: 0;
+}
+.about .continer .text p{
+    font-weight: bold;
+}
+.about .continer .text a{
+    text-decoration: none;
+    display: block;
+    background-color:  black;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    transition: 0.2s;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.about .continer .text a:hover{
+    background-color: red;
+}
+.about .continer .image img{
+    border-radius: 20px;
+}
+@media (max-width:767px) {
+    .about .continer{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .about .continer .image img{
+        width: 100%;
+    }
+    .about .continer .text a{
+        text-decoration: none;
+        display: block;
+        background-color:  black;
+        color: white;
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+        transition: 0.2s;
+        margin-top: 20px;
+    }
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    .about .continer .image img{
+        width: 100%;
+    }
+    
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .about .continer .image img{
+        width: 100%;
+    }
+    
+}
+
+/* end about */
+/* start service */
+.service{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.service .continer{
+    text-align: center;
+}
+.service .continer h2{
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    position: relative;
+    padding-top: 20px
+}
+.service .continer h2::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    border-radius: 25px;
+    height: 4px;
+    background-color: gold;
+    bottom: 0;
+    left: 48%;
+}
+.service .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 80px;
+    text-align: center;
+    line-height: 2;
+    margin: 20px;
+}
+.service .content .card{
+    background-color: white;
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}
+.service .content .box img{
+    width: 100%;
+    margin-top: 20px;
+}
+.service .content .box a{
+    text-decoration: none;
+    display: block;
+    background-color:  black;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    transition: 0.2s;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+.service .content .box a:hover{
+    background-color: red;
+}
+@media (max-width:767px) {
+    .service .content{
+        padding-bottom: 30px;
+    }
+    .service .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 20px;
+        text-align: center;
+        line-height: 2;
+        margin: 20px;
+    }
+    .service .continer h2::after{
+        content: "";
+        position: absolute;
+        width: 60px;
+        border-radius: 25px;
+        height: 4px;
+        background-color: gold;
+        bottom: 0;
+        left: 46%;
+    }
+    .service .content .box a{
+        text-decoration: none;
+        display: block;
+        background-color:  black;
+        color: white;
+        padding: 10px;
+        width: 60%;
+        text-align: center;
+        transition: 0.2s;
+        margin-top: 20px;
+        margin: 20px auto;
+    }
+    
+}
+/* end serives */
+/* start info */
+.info{
+    margin-top: 30px;
+    text-align: center;
+}
+.info .continer h2{
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.info .continer h2::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    border-radius: 25px;
+    height: 4px;
+    background-color: gold;
+    bottom: 0;
+    left: 48%;
+}
+.info .content{
+    line-height: 2;
+}
+@media (max-width:767px) {
+    .info .continer h2::after{
+        content: "";
+        position: absolute;
+        width: 60px;
+        border-radius: 25px;
+        height: 4px;
+        background-color: gold;
+        bottom: 0;
+        left: 43%;
+    }
+    .info .content img{
+        width: 100%;
+    }
+    .info .content{
+        padding: 5px;
+        margin: 10px;
+    }
+    
+}
+@media (min-width:768px) and (max-width:919px) {
+    .info .content p{
+        margin: 10px;
+    }
+    
+}
+/* end info */
+/* start touch */
+.touch{
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
+}
+.touch .continer{
+    text-align: center;
+    color: white;
+}
+.touch .content input{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.touch .content button{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.touch .content button:hover{
+    background-color: red;
+    color: white;
+}
+/* end touch */
+/* start gurad */
+.guard{
+    margin-top: 20px;
+}
+.guard .continer{
+    text-align: center;
+    line-height: 2;
+}
+.guard .continer h2{
+    position: relative;
+    padding-bottom: 20px;
+}
+.guard .continer h2::after{
+    content: "";
+    position: absolute;
+    background-color: gold;
+    width: 46px;
+    height: 5px;
+    border-radius: 5px;
+    bottom: 0;
+    left: 49%;
+}
+.guard .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 60px;
+    text-align: center;
+    margin: 20px;
+}
+.guard .content .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.guard .content .box .text{
+    position: relative;
+    background-color: transparent;
+    color: white;
+    bottom: 120px;
+    padding: 20px;
+    background-color: rgb(18, 18, 18,70%)
+}
+@media (max-width:767px) {
+    .guard .continer h2::after{
+        content: "";
+        position: absolute;
+        background-color: gold;
+        width: 46px;
+        height: 5px;
+        border-radius: 5px;
+        bottom: 0;
+        left: 46%;
+    }
+    .guard .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 60px;
+        text-align: center;
+        margin: 10px;
+    }
+    .guard .content .box img{
+        width: 100%;
+    }
+    .guard .content .box .text{
+        position: relative;
+        background-color: transparent;
+        color: white;
+        bottom: 116px;
+        padding: 20px;
+        background-color: rgb(18, 18, 18,70%)
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .guard .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+    .guard .content .box img{
+        width: 100%;
+    }
+    
+}
+@media (min-width:929px) and (max-width:1199px) {
+    .guard .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+    .guard .content .box img{
+        width: 100%;
+    }
+    
+}
+/* end gurad */
+/* start contact */
+.contact{
+    background-color: black;
+    padding: 30px;
+}
+.contact .continer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 80px;
+    line-height: 2;
+}
+.contact .continer{
+    color: white;
+}
+.contact .continer input{
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.contact .continer button{
+    display: block;
+    background-color: red;
+    color: white;
+    transition: 0.2s;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.contact .continer button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* end contact */
+/* start footer */
+.footer{
+    text-align: center;
+    background-color: red;
+    color: wheat;
+    padding: 20px;
+    line-height: 2;
+}
+.footer .continer i{
+    margin-left: 10px;
+    font-size: 25px;
+}
+/* end footer */
+@media (min-width:1400px) {
+    .header .continer .links ul{
+        transform: translateX(-20%);
+    }
+    .about .text p{
+        width: 90%;
+    }
+    .service .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 60px;
+        text-align: center;
+        line-height: 2;
+        margin: 90px;
+        margin-left: -10px;
+    }
+    .service .content .box{
+        margin: 20px;
+    }
+    .touch .content input{
+        display: block;
+        width: 85%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .contact .continer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 80px;
+        line-height: 2;
+    }
+    .guard .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+        gap: 60px;
+        text-align: center;
+        margin: 90px;
+        margin-left: -60px;
+    }
+    .guard .content .box{
+        margin: 30px;
+    }
+    
+}
